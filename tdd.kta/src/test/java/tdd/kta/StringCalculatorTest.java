@@ -12,7 +12,7 @@ public class StringCalculatorTest {
  
 @Test
  public void testAdd() throws Exception {
-	 assertEquals(1,stringCalculator.Add("//;\\n1;1001"));
+	 assertEquals(1,stringCalculator.Add("//[***]\\n1***2***3"));
  }
  
 }
