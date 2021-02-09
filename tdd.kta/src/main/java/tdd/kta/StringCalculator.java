@@ -4,7 +4,7 @@ import java.io.Console;
 
 public class StringCalculator {
 	
-	public int Add(String numbers) {
+	public int Add(String numbers) throws Exception {
 		int sum=0;
 		try {
 			if(numbers.isEmpty())
@@ -15,7 +15,13 @@ public class StringCalculator {
 				String[] num = strings[1].split(delim); 
 				for(String numString : num) {
 					
-					sum=sum + Integer.parseInt(numString);
+					int n = Integer.parseInt(numString);
+					if(n>0) {
+						sum+=n;
+					}
+					else {
+						throw new Exception("Neative number");
+					}
 				}
 			}
 		} catch (Exception e) {

@@ -11,8 +11,8 @@ public class StringCalculatorTest {
  private StringCalculator stringCalculator = new StringCalculator();
  
 @Test
- public void testAdd() {
-	 assertEquals(4, stringCalculator.Add("//;\\n-1;5"));
+ public void testAdd() throws Exception {
+	 assertEquals(4,stringCalculator.Add("//;\\n-1;5"));
  }
  
 }
