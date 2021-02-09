@@ -12,7 +12,7 @@ public class StringCalculatorTest {
  
 @Test
  public void testAdd() {
-	 assertEquals(4, stringCalculator.Add("//;\\n-1;3"));
+	 assertEquals(4, stringCalculator.Add("//;\\n-1;5"));
  }
  
 }
