@@ -10,8 +10,9 @@ public class StringCalculator {
 			if(numbers.isEmpty())
 				sum=0;
 			else {
-				String[] num = numbers.split(",");
+				String[] num = numbers.split("\n|,");
 				for(String numString : num) {
+					
 					sum=sum + Integer.parseInt(numString);
 				}
 			}
