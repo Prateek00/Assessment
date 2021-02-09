@@ -11,7 +11,7 @@ public class StringCalculator {
 				sum=0;
 			else {
 				String[] strings = numbers.split("\n");
-				String delim= strings[0].substring(3, strings[0].length()-2);
+				String delim= Character.toString(strings[0].charAt(3)) + "|" + Character.toString(strings[0].charAt(6));
 				String[] num = strings[1].split(delim); 
 				for(String numString : num) {
 					
