@@ -16,7 +16,7 @@ public class StringCalculator {
 				for(String numString : num) {
 					
 					int n = Integer.parseInt(numString);
-					if(n>0) {
+					if(n>=0 && n<1000) {
 						sum+=n;
 					}
 					else {
